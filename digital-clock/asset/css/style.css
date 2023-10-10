@@ -2,14 +2,45 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Young Serif', serif;
 }
+
+h1 {
+    color: #061b4842;
+    margin-bottom: 5%;
+    font-family: 'Young Serif', serif;
+    animation: colorChange 0.5s ease-in-out 5;
+    /* L'animation dure 0.5 seconde et se répète 5 fois */
+    animation-delay: 15s;
+    /* Début de l'animation après 15 secondes */
+}
+
+h1:nth-child(2) {
+    animation: colorChange 0.5s ease-in-out 5, colorChange 0.5s ease-in-out 1 30s;
+    /* 1 itération après 30 secondes */
+    animation-delay: 15s, 0;
+    /* Début de l'animation immédiatement pour la deuxième h1 */
+}
+
+@keyframes colorChange {
+
+    0%,
+    100% {
+        color: #061b48;
+    }
+
+    50% {
+        color: #061b4862;
+    }
+}
+
 
 body {
     background: #00050f;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     min-height: 100vh;
 }
 
@@ -18,7 +49,7 @@ body {
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    background: #000a20;
+    background: #00133b;
     box-shadow: 0 0 20px rgba(9, 0, 90, 0.05), 0 0 40px rgba(9, 0, 90, 0.05), 0 0 60px rgba(9, 0, 90, 0.05), 0 0 80px rgba(9, 0, 90, 0.05), 0 0 100px rgba(9, 0, 90, 0.05), 0 0 120px rgba(9, 0, 90, 0.05);
 }
 
@@ -29,7 +60,7 @@ body {
     transform: translate(-50%, -100%);
     width: 10px;
     height: 100px;
-    background: #fff;
+    background: #000a20;
     border-radius: 10px;
 }
 
@@ -40,7 +71,7 @@ body {
     transform: translate(-50%, -100%);
     width: 8px;
     height: 130px;
-    background: #fff;
+    background: #000a20;
     border-radius: 10px;
 }
 
@@ -51,7 +82,7 @@ body {
     transform: translate(-50%, -100%);
     width: 4px;
     height: 160px;
-    background: #fff;
+    background: #000a20;
     border-radius: 10px;
 }
 
@@ -60,13 +91,13 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    background: #fff;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     text-align: center;
     line-height: 20px;
-    color: #000a20;
+    background: #0045db;
+    box-shadow: 0 0 20px rgba(9, 0, 90, 0.05), 0 0 40px rgba(9, 0, 90, 0.05), 0 0 60px rgba(9, 0, 90, 0.05), 0 0 80px rgba(9, 0, 90, 0.05), 0 0 100px rgba(9, 0, 90, 0.05), 0 0 120px rgba(9, 0, 90, 0.05);
     font-size: 11px;
 }
 
@@ -132,7 +163,7 @@ body {
     transform: translate(-50%, -50%);
     width: 20px;
     height: 20px;
-    background: #fff;
+    background: #012269;
     border-radius: 50%;
 }
 
@@ -156,21 +187,8 @@ body {
     transition: all 0.5s ease;
 }
 
-.clock .hour.active {
-    background: #fff;
-}
-
-.clock .minute.active {
-    background: #fff;
-}
-
-.clock .second.active {
-    background: #fff;
-}
-
 .clock .numbers.active {
-    background: #fff;
-    color: #000a20;
+    background: #315ec0;
 }
 
 .clock .dot.active {
