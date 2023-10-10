@@ -206,7 +206,7 @@ body {
 }
 
 .clock .minute {
-    transform: translate(-50%, -100%) rotate(180deg) translate(0, 100px);
+    transform: translate(-50%, -100%) rotate(180deg) translate(100px, 0);
 }
 
 .clock .second {

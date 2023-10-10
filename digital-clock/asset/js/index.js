@@ -7,11 +7,11 @@ const dot = document.querySelector('.dot');
 setInterval(() => {
     let date = new Date();
     let hr = (date.getHours() % 12) * 30; // Utilisez % 12 pour obtenir l'heure au format 12 heures
-    let min = date.getMinutes() * 6;
+    let min = date.getMinutes() * 3;
     let sec = date.getSeconds() * 6;
 
     hour.style.transform = `translate(-50%, -100%) rotateZ(${(hr / 2.5)}deg) translate(0, 100px)`;
-    minute.style.transform = `translate(-50%, -100%) rotateZ(${(min / 2)}deg) translate(0, 100px)`;
+    minute.style.transform = `translate(-50%, -100%) rotateZ(${(min / 3)}deg) translate(0, 100px)`;
     second.style.transform = `translate(-50%, -100%) rotateZ(${(sec)}deg) translate(0, 100px)`;
 
     for (var i = 0; i < numbers.length; i++) {
