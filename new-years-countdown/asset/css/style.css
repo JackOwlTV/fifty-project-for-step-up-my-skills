@@ -10,19 +10,26 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: space-e;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
 h1 {
     color: #fff;
-    font-size: 5rem;
+    font-size: 3rem;
     margin-bottom: 40px;
 }
 
 .year {
     color: #fff;
-    font-size: 10rem;
+    font-size: 5rem;
     margin-bottom: 40px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -88,6 +95,7 @@ h1 {
 @media (max-width: 768px) {
     h1 {
         font-size: 3rem;
+        text-justify: center;
     }
 
     .year {
@@ -99,18 +107,11 @@ h1 {
         height: 100px;
     }
 
-    .countdown div span:first-child {
-        font-size: 3rem;
-    }
-
-    .countdown div span:last-child {
-        font-size: 1rem;
-    }
 }
 
 @media (max-width: 500px) {
     h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .year {

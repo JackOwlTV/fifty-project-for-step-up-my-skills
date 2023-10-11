@@ -24,9 +24,7 @@ function updateCountdown() {
     minutes.innerText = m < 10 ? '0' + m : m;
     seconds.innerText = s < 10 ? '0' + s : s;
 
-    if (d < 10) {
-        days.innerText = '00' + d;
-    } else if (d < 100) {
+    if (d > 100) {
         days.innerText = '0' + d;
     }
 
