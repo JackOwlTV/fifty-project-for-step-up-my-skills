@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #1b1b1b;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: #fff;
+    font-size: 5rem;
+    margin-bottom: 40px;
+}
+
+.year {
+    color: #fff;
+    font-size: 10rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown div {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: #1b1b1b;
+    border-radius: 10px;
+    margin: 0 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.countdown div span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.countdown div span:first-child {
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    top: 30%;
+}
+
+.countdown div span:last-child {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    top: 70%;
+}
+
+.countdown div:before,
+.countdown div:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #1b1b1b;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.countdown div:before {
+    transform: rotate(45deg);
+}
+
+.countdown div:after {
+    transform: rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .year {
+        font-size: 6rem;
+    }
+
+    .countdown div {
+        width: 100px;
+        height: 100px;
+    }
+
+    .countdown div span:first-child {
+        font-size: 3rem;
+    }
+
+    .countdown div span:last-child {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .year {
+        font-size: 4rem;
+    }
+
+    .countdown div {
+        width: 80px;
+        height: 80px;
+    }
+
+    .countdown div span:first-child {
+        font-size: 2rem;
+    }
+
+    .countdown div span:last-child {
+        font-size: 0.8rem;
+    }
+}
