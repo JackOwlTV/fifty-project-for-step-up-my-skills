@@ -10,3 +10,7 @@ Lors de la création de ces projets, j'ai pu perfectionner mes compétences en H
 Mais ce n'est pas tout ! Le JavaScript a joué un rôle clé dans ces projets. J'ai développé des fonctionnalités interactives, des animations et des comportements dynamiques pour améliorer l'expérience utilisateur 🌈.
 
 Chacun de ces 50 projets est une pierre angulaire de mon parcours 🧱, et ils ont tous contribué à ma progression en tant que développeur web. En parcourant cette liste, je peux voir comment j'ai évolué, de la création de sites web simples aux applications web complexes. Mon apprentissage est un voyage continu, mais ces projets m'ont aidé à poser des bases solides pour mon avenir dans le développement web. J'espère continuer à explorer de nouvelles technologies, à relever des défis passionnants et à affiner mes compétences pour les projets à venir 🚀.
+
+https://declock.netlify.app/
+
+https://newyeascount.netlify.app/
